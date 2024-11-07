@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure body takes up full viewport height */
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#heading1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2em;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+section {
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 15px;
+  padding: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h2 {
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  #heading1 {
+    font-size: 1.8em;
+  }
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 95%;
+  }
+  #heading1 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 480px) {
+  #heading1 {
+    font-size: 1.4em;
+    margin-top: 10px;
+  }
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
